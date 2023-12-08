@@ -9,7 +9,7 @@ function handleGetData(event) {
     event.preventDefault()
     userInput = $input.val()
     $.ajax({
-        url: "https://api.openbrewerydb.org/v1/breweries/random"
+        url: "https://api.openbrewerydb.org/v1/breweries?by_city=" + userInput + "&per_page=10"
     }).then(
         (data) => {
             breweryInfo = data
@@ -23,6 +23,10 @@ function handleGetData(event) {
 }
 
 function render() {
-    console.log(breweryInfo[0].name)
-    $name.text(breweryInfo[0].name)
+    console.log(breweryInfo[1].name)
+    breweryInfo.forEach((brew) => {
+        //$name.text(brew.name)//
+        //$("<p>" + $name.text(brew.name) + "</p>");//
+        $(".one").append("<p>" + (brew.name) + "</p>");
+    });
 }
