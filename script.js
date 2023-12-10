@@ -14,19 +14,16 @@ function handleGetData(event) {
         (data) => {
             breweryInfo = data
             render()
-            console.log(data)
         },
         (error) => {
             console.log("bad request", error)
         }
     )
+    $("#userInput").val("")
 }
 
 function render() {
-    console.log(breweryInfo[1].name)
     breweryInfo.forEach((brew) => {
-        //$name.text(brew.name)//
-        //$("<p>" + $name.text(brew.name) + "</p>");//
         $(".one").append("<p>" + (brew.name) + "</p>");
     });
 }
