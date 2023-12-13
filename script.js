@@ -20,6 +20,7 @@ function handleGetData(event) {
         }
     )
     $("#userInput").val("")
+    $(".one").empty()
 }
 
 function render() {
