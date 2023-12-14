@@ -25,6 +25,7 @@ function handleGetData(event) {
 
 function render() {
     breweryInfo.forEach((brew) => {
-        $(".one").append("<p>" + (brew.name) + "</p>");
+        $(".one").append("<h3>" + (brew.name) + "</h3>");
+        $(".one").append("<a href=" + (brew.website_url) + ">" + (brew.website_url) + "</a>")
     });
 }
