@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: #d1a909;
+}
+
+h1 {
+    background-color: #fff1df;
+}
+
+.bubbles{
+    position: relative;
+    height: 100%;
+}
+
+.bubbles span{
+    position: absolute;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3) inset;
+    border-radius: 50%;
+}
+
+.bubbles span:nth-child(1)
+{
+    animation: bubbleup 4s linear infinite;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    left: 0%;
+}
+@keyframes bubbleup{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+
+.bubbles span:nth-child(2)
+{
+    animation: bubbleup 8s linear infinite;
+    height: 150px;
+    width: 150px;
+    bottom: 0;
+    left: 10%;
+}
+
+.bubbles span:nth-child(3)
+{
+    animation: bubbleup 4s linear infinite;
+    height: 120px;
+    width: 120px;
+    bottom: 0;
+    left: 20%;
+}
+
+.bubbles span:nth-child(4)
+{
+    animation: bubbleup 6s linear infinite;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    left: 25%;
+}
+
+.bubbles span:nth-child(5)
+{
+    animation: bubbleup 5s linear infinite;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    left: 35%;
+}
+
+.bubbles span:nth-child(6)
+{
+    animation: bubbleup 3s linear infinite;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    left: 45%;
+}
+
+.bubbles span:nth-child(7)
+{
+    animation: bubbleup 8s linear infinite;
+    height: 170px;
+    width: 170px;
+    bottom: 0;
+    left: 50%;
+}
+
+.bubbles span:nth-child(8)
+{
+    animation: bubbleup 4s linear infinite;
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    left: 65%;
+}
+
+.bubbles span:nth-child(9)
+{
+    animation: bubbleup 3s linear infinite;
+    height: 130px;
+    width: 130px;
+    bottom: 0;
+    left: 75%;
+}
+
+.bubbles span:nth-child(10)
+{
+    animation: bubbleup 7s linear infinite;
+    height: 90px;
+    width: 90px;
+    bottom: 0;
+    right: 0;
+}
